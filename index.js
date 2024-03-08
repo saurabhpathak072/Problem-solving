@@ -1,4 +1,5 @@
 import { buildArray, finalValueAfterOperations, findWordsContaining, getConcatenation, numIdenticalPairs, shuffle } from "./Array/Concat.js";
+import { findFactorialNumber } from "./Interview-problems/Factorial-program.js";
 import { generateFibonacciSeries, printFibonacciSeries } from "./Interview-problems/fibonacii-series.js";
 
 
@@ -88,6 +89,11 @@ console.log(`Fibonacci Series of length ${n}:`);
 console.log(result.join(', '));
 
 // ------------------------------------------------------------
+
+// ----------------------- Find Factorial --------------------
+
+const factors = findFactorialNumber(5);
+console.log(`Factorial of ${n}: ${factors}`);
 
 
 
