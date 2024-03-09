@@ -1,6 +1,7 @@
 import { buildArray, finalValueAfterOperations, findWordsContaining, getConcatenation, numIdenticalPairs, shuffle } from "./Array/Concat.js";
 import { findFactorialNumber } from "./Interview-problems/Factorial-program.js";
 import { generateFibonacciSeries, printFibonacciSeries } from "./Interview-problems/fibonacii-series.js";
+import { maxArea } from "./leetcode/ContainerWithMostWater.js";
 
 
 
@@ -81,19 +82,27 @@ Note that the returned array may be in any order.*/
 
 // ---------------Fibonacci series-----------------------------
 
-// Change the value of 'n' to control the length of the Fibonacci series
-const n = 20;
-const result = generateFibonacciSeries(n);
+// // Change the value of 'n' to control the length of the Fibonacci series
+// const n = 20;
+// const result = generateFibonacciSeries(n);
 
-console.log(`Fibonacci Series of length ${n}:`);
-console.log(result.join(', '));
+// console.log(`Fibonacci Series of length ${n}:`);
+// console.log(result.join(', '));
 
 // ------------------------------------------------------------
 
 // ----------------------- Find Factorial --------------------
 
-const factors = findFactorialNumber(5);
-console.log(`Factorial of ${n}: ${factors}`);
+// const factors = findFactorialNumber(5);
+// console.log(`Factorial of ${n}: ${factors}`);
+
+// -------------------------------------------------------------------
+
+// -------------------- Container with most Water ------------------
+
+const container = maxArea([1,8,6,2,5,4,8,3,7]);
+
+console.log("Container ", container);
 
 
 
